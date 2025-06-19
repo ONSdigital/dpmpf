@@ -1,0 +1,8 @@
+.Rhistory
+.RData
+.Rproj.user
+inst/doc
+*.log
+*.DS_Store
+data-raw/pxweb_nonbirths.rds
+data-raw/pxweb_births.rds

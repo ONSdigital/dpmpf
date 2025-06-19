@@ -1,0 +1,10 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+sample_code.R
+old_code
+^README\.Rmd$
+^\.github$
+^Makefile$
+data-raw
+^LICENSE\.md$
+^INTRO-TO-RCPP.md$

@@ -1,37 +1,43 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 # dpmpf
 
 Particle filters for estimating Bayesian demographic accounts.
 
 <!-- badges: start -->
-
-[![Lifecycle:
-superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#superseded)
+[![Lifecycle: superseded](https://img.shields.io/badge/lifecycle-superseded-blue.svg)](https://lifecycle.r-lib.org/articles/stages.html#superseded)
 
 [![R-CMD-check](https://github.com/ONSDigital/dpmpf/workflows/R-CMD-check/badge.svg)](https://github.com/ONSDigital/dpmpf/actions)
 <!-- badges: end -->
 
 # Please note: this package is no longer under development nor is it being maintained.
 
-For related work under current development please see the public
-repositories [dpmaccount](https://github.com/ONSdigital/dpmaccount) and
-[dpmall](https://github.com/ONSdigital/dpmall) packages.
+For related work under current development please see the public repositories
+[dpmaccount](https://github.com/ONSdigital/dpmaccount) and [dpmall](https://github.com/ONSdigital/dpmall) packages.
+
 
 ## Purpose
 
-**dpmpf** is the back end for package
-[dpmaccpf](https://github.com/ONSDigital/dpmaccpf) (also no longer being
-maintained). End users should never need to interact with **dpmaccpf**
-directly.
+**dpmpf** is the back end for package [dpmaccpf](https://github.com/ONSDigital/dpmaccpf) (also no longer being maintained). End users should never need to interact with **dpmaccpf** directly. 
 
 ## Interface
 
 ### Functions for creating cohort data models
 
-Internal functions within **dpmaccpf** call functions within **dpmpf**
-to set up cohort-level data models. The current set-up functions are:
+Internal functions within **dpmaccpf** call functions within **dpmpf** to set up cohort-level data models. The current set-up functions are:
 
 | Function                 | Description                            |
 |:-------------------------|:---------------------------------------|
@@ -53,10 +59,8 @@ Function `create_run_destroy_pfilter()`
 
 ## Coding standards
 
-We are using the [tidyverse style guide](https://style.tidyverse.org),
-and run function `styler::style_pkg()` regularly.
+We are using the [tidyverse style guide](https://style.tidyverse.org), and run function `styler::style_pkg()` regularly.
 
-We are aiming for maximum simplicity, transparency, and maintainability.
-Most people reading this code will be more familiar with R than with
-C++, so the C++ code follows R rather than C++ conventions, and
-minimises the use of techniques that are specific to C++.
+We are aiming for maximum simplicity, transparency, and maintainability. Most people reading this code will be more familiar with R than with C++, so the C++ code follows R rather than C++ conventions, and minimises the use of techniques that are specific to C++.
+
+

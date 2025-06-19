@@ -1,0 +1,5 @@
+Rcpp::loadModule("mod_cdmnoregpoibin", TRUE)
+Rcpp::loadModule("mod_cdmwithregpoibin", TRUE)
+Rcpp::loadModule("mod_cdmnoregnbinom", TRUE)
+Rcpp::loadModule("mod_cdmwithregnbinom", TRUE)
+Rcpp::loadModule("mod_cdmnoregnorm", TRUE)

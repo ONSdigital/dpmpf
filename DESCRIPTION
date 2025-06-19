@@ -1,0 +1,40 @@
+Package: dpmpf
+Type: Package
+Title: Particle Filters for Bayesian Demographic Accounts
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Office for National Statistics", email = "demographic.methods@ons.gov.uk", role =c("aut","cre","cph", "fnd")),
+      person(given = "John", family = "Bryant",role = "aut"),
+      person(given = "Nick", family = "Grant", email = "h@ckte.ch", role = "aut"),
+      person(given = "Aidan", family = "Metcalfe", role = "ctb"))
+Description: Particle filters for Bayesian demographic accounts.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends:
+    R (>= 3.5.0)
+Suggests: 
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.2
+Imports:
+    methods,
+    R6,
+    Rcpp,
+    stats
+Collate: 
+    'cdms-constructors.R'
+    'globals.R'
+    'PFilter-constructors.R'
+    'PFilter-methods.R'
+    'RcppExports.R'
+    'cdm-constructors.R'
+    'cdm.R'
+    'cdms.R'
+    'check-functions.R'
+    'create_run_destroy_pfilter.R'
+    'dpmpf-package.R'
+    'helper-functions.R'
+    'simulated.R'
+LinkingTo: 
+    Rcpp
